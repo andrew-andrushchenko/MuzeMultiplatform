@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Muze</string>
+
+    <!--Navigation bar screens-->
+    <string name="artists">Artists</string>
+    <string name="artworks">Artworks</string>
+    <string name="search">Search</string>
+    <string name="saved">Saved</string>
+
+    <!--Artist detail-->
+    <string name="location_formatted">Location: %1$s</string>
+
+    <!--Artwork detail-->
+    <string name="select_artist_to_see_details">Select an artist to see more about</string>
+    <string name="by_formatted">by %1$s</string>
+    <string name="year_formatted">Year: %1$s</string>
+    <string name="error_loading_image">Error loading image. Try again.</string>
+
+    <!--Search-->
+    <string name="type_artist_or_artwork_name">Type artist or artwork name</string>
+    <string name="clear_search_field">Clear search field</string>
+    <string name="recent_searches">You have searched:</string>
+    <string name="no_recent_searches">Seems like you didn't search anything</string>
+    <string name="clear_recent_searches">Clear recent searches</string>
+
+    <!--Saved items-->
+    <string name="no_saved_items">You saved items will appear here.</string>
+    <string name="sort_order">Sort items by:</string>
+    <string name="sort_order_title">Title</string>
+    <string name="sort_order_date_saved">Date</string>
+    <string name="display_item_types">Saved items to display:</string>
+    <string name="display_item_types_all">All</string>
+    <string name="apply">Apply</string>
+
+    <!--Common-->
+    <string name="artworks_by_formatted">See all paintings of %1$s:</string>
+    <string name="artist_portrait">Artist portrait</string>
+    <string name="navigation_icon">Navigation icon</string>
+    <string name="navigate_back">Navigate back</string>
+    <string name="show_all_artworks_by_artist">Show all artworks of the artist</string>
+    <string name="show_info_about_artwork">Show information about artwork</string>
+    <string name="zoom_to_fill">Zoom to fill</string>
+    <string name="search_icon">Search icon</string>
+
+    <string name="retry">Retry</string>
+    <string name="to_top">To top</string>
+
+    <string name="error_banner_text">Oops! Something went wrong, please check connection</string>
+    <string name="error_loading_items">Network error, check connection</string>
+    <string name="empty_content_banner_text">Uh oh…\n Looks like it's nothing here</string>
+
+    <string name="artwork_item">Artwork item</string>
+</resources>
