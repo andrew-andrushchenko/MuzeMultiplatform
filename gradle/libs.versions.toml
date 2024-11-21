@@ -28,6 +28,7 @@ parcelize = "2.0.20"
 room = "2.7.0-alpha11"
 ksp = "2.0.21-1.0.25"
 sqlite = "2.5.0-alpha11"
+splashcreen = "1.0.1"
 
 [libraries]
 #kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -77,6 +78,8 @@ room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-runtime-android = { module = "androidx.room:room-runtime-android", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 sqlite-bundled = { module = "androidx.sqlite:sqlite-bundled", version.ref = "sqlite" }
+
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "splashcreen" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
