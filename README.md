@@ -1,4 +1,5 @@
 # Muze Multiplatform
+![Screen 1](/screenshot/MuzeMultiplatform.png "Screen 1")
 
 Multiplatform client application for
 [Muze RESTful Web Service](https://github.com/andrew-andrushchenko/MuzeServer).
@@ -56,6 +57,9 @@ Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-mu
 # Special thanks
 [Albert Chang](https://github.com/mxalbert1996) and [Tlaster](https://github.com/Tlaster)
 for the [Zoomable composable component](https://github.com/mxalbert1996/Zoomable)
+
+# See also
+Original Android-only version of the [app](https://github.com/andrew-andrushchenko/Muze)
 
 # License
 ```
