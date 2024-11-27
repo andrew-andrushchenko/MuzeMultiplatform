@@ -1,3 +1,4 @@
+import com.android.build.gradle.internal.cxx.configure.gradleLocalProperties
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
@@ -11,6 +12,27 @@ plugins {
     alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.ksp)
     alias(libs.plugins.room)
+}
+
+val generateBuildConfig by tasks.registering(Sync::class) {
+    val baseUrl = gradleLocalProperties(rootDir, providers).getProperty("base_url")
+
+    from(
+        resources.text.fromString("""
+        |package com.andrii_a.muze
+        |
+        |object BuildConfig {
+        |    const val BASE_URL = "$baseUrl"
+        |}
+        |
+      """.trimMargin()
+        )
+    ) {
+        rename { "BuildConfig.kt" } // set the file name
+        into("com/andrii_a/muze/") // change the directory to match the package
+    }
+
+    into(layout.buildDirectory.dir("generated-src/"))
 }
 
 kotlin {
@@ -49,6 +71,9 @@ kotlin {
             implementation(libs.room.runtime.android)
 
             implementation(libs.androidx.core.splashscreen)
+        }
+        commonMain {
+            kotlin.srcDir(generateBuildConfig.map { it.destinationDir })
         }
         commonMain.dependencies {
             implementation(compose.runtime)
